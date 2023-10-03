@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="682.0" prefWidth="927.0" styleClass="background" stylesheets="@DarkTheme.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.view.ReceivedMessageController">
+   <children>
+      <TableView fx:id="receivedTable" layoutX="10.0" layoutY="115.0" prefHeight="388.0" prefWidth="894.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="115.0">
+         <columns>
+            <TableColumn fx:id="fromColumn" prefWidth="217.60000324249268" text="From" />
+            <TableColumn fx:id="contentColumn" prefWidth="505.6000518798828" text="Content" />
+            <TableColumn fx:id="dateColumn" prefWidth="198.39990234375" text="Date" />
+         </columns>
+      </TableView>
+      <Label layoutX="40.0" layoutY="24.0" styleClass="label-header" text="Received Message : " />
+   </children>
+</AnchorPane>

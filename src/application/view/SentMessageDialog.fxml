@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="682.0" prefWidth="927.0" styleClass="background" stylesheets="@DarkTheme.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.view.SentMessageController">
+   <children>
+      <TableView fx:id="sentTable" layoutY="105.0" prefHeight="388.0" prefWidth="715.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="105.0">
+        <columns>
+          <TableColumn fx:id="toColumn" prefWidth="217.60000324249268" text="To" />
+          <TableColumn fx:id="contentColumn" prefWidth="505.6000518798828" text="Content" />
+            <TableColumn fx:id="dateColumn" prefWidth="198.39990234375" text="Date" />
+        </columns>
+      </TableView>
+      <Label layoutX="30.0" layoutY="14.0" styleClass="label-header" text="Sent Message : " />
+   </children>
+</AnchorPane>
